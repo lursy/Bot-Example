@@ -1,0 +1,24 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "main": "./src/main.ts",
+  "scripts": {
+    "start:dev": "npx ts-node-dev ./src/main.ts",
+    "start:prod": "node ./dist/main.js"
+  },
+  "keywords": [
+    "bot",
+    "discord.js",
+    "typescript"
+  ],
+  "author": "lursy",
+  "license": "ISC",
+  "description": "a bot to move, manage and automate processes on your server!",
+  "dependencies": {
+    "discord.js": "^14.22.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@types/node": "^24.5.2"
+  }
+}
