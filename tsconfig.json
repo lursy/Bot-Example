@@ -1,17 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2024", // Or a version compatible with your Node.js environment
-    "module": "nodenext", // Or "ESNext" if using ES Modules
-    "rootDir": ".", // Where your TypeScript source files are located
-    "outDir": "./dist", // Where compiled JavaScript files will be output
-    "strict": true, // Enable all strict type-checking options
-    "moduleResolution": "nodenext", // How modules are resolved
-    "esModuleInterop": true, // Enables better interoperability with CommonJS modules
-    "skipLibCheck": true, // Skips type checking of declaration files
+    "target": "es2024",                       // Or a version compatible with your Node.js environment
+    "module": "nodenext",                     // Or "ESNext" if using ES Modules
+    "rootDir": "src/",                           // Where your TypeScript source files are located
+    "outDir": "./dist",                       // Where compiled JavaScript files will be output
+    "strict": true,                           // Enable all strict type-checking options
+    "moduleResolution": "nodenext",           // How modules are resolved
+    "esModuleInterop": true,                  // Enables better interoperability with CommonJS modules
+    "skipLibCheck": true,                     // Skips type checking of declaration files
     "forceConsistentCasingInFileNames": true, // Ensures consistent casing in file names
-    "removeComments": true, // Removes comments from compiled JavaScript
-    "resolveJsonModule": true, // Allows importing .json files
-    "sourceMap": false // Set to true for debugging with source maps
+    "removeComments": true,                   // Removes comments from compiled JavaScript
+    "resolveJsonModule": true,                // Allows importing .json files
+    "sourceMap": false,                       // Set to true for debugging with source maps
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
   },
   "include": [ "./src/**/*.ts", "main.ts"  ],
   "exclude": [

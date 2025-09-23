@@ -1,5 +1,5 @@
 import { Client, GatewayIntentBits } from "discord.js";
-import { Bot } from "./src/bot";
+import { Bot } from "./core/bot";
 
 export const bot = new Bot(
     new Client({
