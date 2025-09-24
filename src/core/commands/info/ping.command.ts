@@ -4,7 +4,7 @@ import { Command } from "../../enitities/command.entity";
 import { InfoGroup } from "./_index";
 
 @RegisterCommand(InfoGroup)
-export class Ping extends Command {
+class Ping extends Command {
     constructor() {
         super({
             cooldown: 1000,
