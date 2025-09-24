@@ -15,10 +15,11 @@
   "license": "ISC",
   "description": "a bot to move, manage and automate processes on your server!",
   "dependencies": {
-    "discord.js": "^14.22.1"
+    "discord.js": "^14.22.1",
+    "dotenv": "^17.2.2"
   },
   "devDependencies": {
-    "typescript": "^5.9.2",
-    "@types/node": "^24.5.2"
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2"
   }
 }

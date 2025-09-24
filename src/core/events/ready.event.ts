@@ -1,23 +1,20 @@
 import { ApplicationCommandData, Client, REST, Routes } from "discord.js";
 import { RegisterEvent } from "../decorators/event.decorator";
 import { Event } from "../enitities/event.entity";
-import { bot } from "../../main";
-
+import { Bot } from "../bot";
 @RegisterEvent()
-class ReadyEvent extends Event {
+export class ReadyEvent extends Event {
     constructor() {
-        super('ready');
+        super('clientReady');
     }
 
     public async execute(client: Client) {
-        console.log("starting bot...");
+        console.log("\n ⏳ Recording slashes...");
 
         const rest = new REST({ version: '10' }).setToken(process.env.TOKEN!);
         const commands: ApplicationCommandData[] = [];
 
-        bot.commands.forEach((collection) => {
-            console.log(`⏳ the "${collection.name}" command has been added`);
-
+        Bot.instance.commands.forEach((collection) => {
             commands.push({
                 name: collection.name,
                 description: collection.description,
@@ -26,12 +23,12 @@ class ReadyEvent extends Event {
         });
 
         await rest.put(
-            Routes.applicationCommands(bot.id),
+            Routes.applicationCommands(Bot.instance.id),
             { body: commands }
         );
 
-        console.log(`✅ Loaded slashes!`);
+        console.log(` ✅ Slashes successfully registered!`);
 
-        console.log(`\n\n${client.user?.username} (${bot.client.user?.id}) is running!`);
+        console.log(`\n ⏹️  ${client.user?.username} (${Bot.instance.id}) is running!`);
     }
 }

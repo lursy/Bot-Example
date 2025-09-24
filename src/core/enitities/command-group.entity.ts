@@ -1,6 +1,6 @@
+import { Bot } from "../bot";
 import { ICommand } from "../interfaces/command.inteface";
 import { Collection } from "discord.js";
-import { bot } from "../../main";
 
 export class CommandGroup {
     public name:        string;
@@ -11,7 +11,7 @@ export class CommandGroup {
         this.name = name;
         this.description = description;
 
-        bot.groups.set(this.name, this);
+        Bot.instance.groups.set(this.name, this);
     }
 
     public addCommand(command: ICommand){

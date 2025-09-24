@@ -1,23 +1,20 @@
 import { Bot } from "../bot";
 import { RegisterEvent } from "../decorators/event.decorator";
 import { Event } from "../enitities/event.entity";
-import { Message } from "discord.js";
+import { Interaction } from "discord.js";
 import { commandHandler } from "../handlers/command.handler";
 
 @RegisterEvent()
 export class MessageCreateEvent extends Event {
     constructor() {
-        super('messageCreate');
+        super('interactionCreate');
     }
 
-    public async execute(message: Message) {
-        if(!message.guild) return;
-        if(message.author.bot) return;
-
-        if(message.content.startsWith(Bot.instance.prefix)) {
+    public async execute(interaction: Interaction) {
+        if(interaction.isChatInputCommand()){
             commandHandler({
-                type: "prefix",
-                message
+                type: "slash",
+                interaction
             });
         }
     }

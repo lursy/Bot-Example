@@ -1,4 +1,9 @@
-import { Client, GatewayIntentBits } from "discord.js";
 import { Bot } from "./core/bot";
+import "./loader";
 
-export const bot = new Bot()
+function main() {
+    process.stdout.write('\x1bc');
+    Bot.instance.start();
+}
+
+main();
