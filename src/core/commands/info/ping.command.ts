@@ -1,10 +1,11 @@
 import { RegisterCommand } from "../../decorators/command.decorator";
-import { ApplicationCommandOptionType } from "discord.js";
+import { ApplicationCommandOptionType, MessageFlags } from "discord.js";
 import { Command } from "../../enitities/command.entity";
 import { InfoGroup } from "./_index";
+import { CommandHandlerDTO } from "../../dtos/command.dto";
 
 @RegisterCommand(InfoGroup)
-export class Ping extends Command {
+class Ping extends Command {
     constructor() {
         super({
             cooldown: 1000,
@@ -25,7 +26,57 @@ export class Ping extends Command {
         })
     }
 
-    public async execute() {
-        console.log("pong!");
+    public async execute(data: CommandHandlerDTO, unity: string) {
+        const status = {
+            0: "🟢",
+            500: "🟡",
+            1000: "🔴",
+        }
+
+        if (!["s", "ms"].includes(unity)) {
+            unity = "ms";
+        }
+
+        if (data.type == "prefix") {
+            const start = Date.now();
+
+            const reply = await data.message.reply({
+                content: "⏳ Pong!\n-# 000ms"
+            });
+
+            const end = Date.now();
+            const latency = end - start;
+
+            let latency_status = status[1000];
+
+            if (latency < 1000) latency_status = status[500];
+
+            if (latency < 500) latency_status = status[0];
+
+            reply.edit({
+                content: `Pong!\n-# ${latency_status} ${unity === "ms" ? latency : latency / 1000}${unity}`
+            });
+
+            return;
+        }
+
+        const start = Date.now();
+
+        const reply = await data.interaction.deferReply({
+            flags: [MessageFlags.Ephemeral]
+        });
+
+        const end = Date.now();
+        const latency = end - start;
+
+        let latency_status = status[1000];
+
+        if (latency < 1000) latency_status = status[500];
+
+        if (latency < 500) latency_status = status[0];
+
+        reply.edit({
+            content: `Pong!\n-# ${latency_status} ${unity === "ms" ? latency : latency / 1000}${unity}`
+        });
     }
 }

@@ -7,17 +7,18 @@ import { Bot } from "../bot";
 @RegisterEvent()
 export class MessageCreateEvent extends Event {
     constructor() {
-        super('messageCreate');
+        super('messageUpdate');
     }
 
-    public async execute(message: Message) {
-        if(!message.guild) return;
-        if(message.author.bot) return;
+    public async execute(oldMessage: Message, newMessage: Message) {
+        if(!newMessage.guild) return;
+        if(newMessage.author.bot) return;
+        if(oldMessage.content == newMessage.content) return;
 
-        if(message.content.startsWith(Bot.instance.prefix)) {
+        if(newMessage.content.startsWith(Bot.instance.prefix)) {
             commandHandler({
                 type: "prefix",
-                message
+                message: newMessage
             });
         }
     }

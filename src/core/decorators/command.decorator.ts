@@ -3,7 +3,7 @@ import { CommandGroup } from "../enitities/command-group.entity";
 import { ICommand } from "../interfaces/command.inteface";
 
 export function RegisterCommand(group: CommandGroup) {
-    return function <T extends ICommand & { "execute": () => Promise<void> }>(constructor: new (...args: any[]) => T) {
+    return function <T extends ICommand & { "execute": (...args: any[]) => Promise<void> }>(constructor: new (...args: any[]) => T) {
         const instance = new constructor();
         
         Bot.instance.commands.set(instance.name, instance);

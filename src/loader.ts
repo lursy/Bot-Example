@@ -5,3 +5,4 @@ import "./core/commands/info/ping.command";
 import "./core/events/interaction.event";
 import "./core/events/message.event";
 import "./core/events/ready.event";
+import "./core/events/edit.event";
