@@ -1,9 +1,9 @@
 import { CacheType, ChatInputCommandInteraction, Message } from "discord.js";
 
-export type CommandHandlerDTO = {
+export type CommandDTO = {
     type: "prefix";
-    message: Message;
+    command: Message;
 } | {
     type: "slash";
-    interaction: ChatInputCommandInteraction<CacheType>;
+    command: ChatInputCommandInteraction<CacheType>;
 }

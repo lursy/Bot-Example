@@ -18,7 +18,7 @@ export class MessageCreateEvent extends Event {
         if(newMessage.content.startsWith(Bot.instance.prefix)) {
             commandHandler({
                 type: "prefix",
-                message: newMessage
+                command: newMessage
             });
         }
     }

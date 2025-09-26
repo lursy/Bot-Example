@@ -14,7 +14,7 @@ export class MessageCreateEvent extends Event {
         if(interaction.isChatInputCommand()){
             commandHandler({
                 type: "slash",
-                interaction
+                command: interaction
             });
         }
     }

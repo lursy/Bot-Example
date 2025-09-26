@@ -1,5 +1,6 @@
 // events
 import "./core/commands/info/ping.command";
+import "./core/commands/support/help.commands";
 
 // comands
 import "./core/events/interaction.event";
