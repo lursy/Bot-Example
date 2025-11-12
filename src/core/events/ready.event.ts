@@ -1,7 +1,8 @@
 import { ApplicationCommandData, Client, REST, Routes } from "discord.js";
-import { RegisterEvent } from "../decorators/event.decorator";
-import { Event } from "../enitities/event.entity";
+import { RegisterEvent } from "../../decorators/event.decorator";
+import { Event } from "../../enitities/event.entity";
 import { Bot } from "../bot";
+
 @RegisterEvent()
 export class ReadyEvent extends Event {
     constructor() {

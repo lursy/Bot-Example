@@ -1,0 +1,15 @@
+export interface IUser{
+    _id: string,
+    email: string,
+    color: string,
+    level: number,
+    money: number,
+    daily: number,
+    spins: number,
+    actions: number,
+    expire_vip: number,
+    custom_emoji: string | null,
+    custom_call: string | null,
+    custom_role: string | null,
+    sequence_daily: number,
+}

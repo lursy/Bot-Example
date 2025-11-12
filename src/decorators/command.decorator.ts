@@ -1,4 +1,4 @@
-import { Bot } from "../bot";
+import { Bot } from "../core/bot";
 import { CommandGroup } from "../enitities/command-group.entity";
 import { ICommand } from "../interfaces/command.inteface";
 

@@ -1,4 +1,4 @@
-import { CommandDTO } from "../dtos/command.dto";
+import { CommandDTO } from "../../dtos/command.dto";
 import { Bot } from "../bot";
 
 export function commandHandler(data: CommandDTO) {

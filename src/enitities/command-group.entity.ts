@@ -1,4 +1,4 @@
-import { Bot } from "../bot";
+import { Bot } from "../core/bot";
 import { ICommand } from "../interfaces/command.inteface";
 import { Collection } from "discord.js";
 

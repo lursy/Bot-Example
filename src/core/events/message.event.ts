@@ -1,6 +1,6 @@
-import { RegisterEvent } from "../decorators/event.decorator";
+import { RegisterEvent } from "../../decorators/event.decorator";
 import { commandHandler } from "../handlers/command.handler";
-import { Event } from "../enitities/event.entity";
+import { Event } from "../../enitities/event.entity";
 import { Message } from "discord.js";
 import { Bot } from "../bot";
 

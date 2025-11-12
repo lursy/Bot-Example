@@ -1,8 +1,8 @@
-import { RegisterCommand } from "../../decorators/command.decorator";
+import { RegisterCommand } from "../../../decorators/command.decorator";
 import { ApplicationCommandOptionType, EmbedBuilder, MessageFlags } from "discord.js";
-import { Command } from "../../enitities/command.entity";
-import { code } from "../../decorators/text.decorator";
-import { CommandDTO } from "../../dtos/command.dto";
+import { Command } from "../../../enitities/command.entity";
+import { code } from "../../../decorators/text.decorator";
+import { CommandDTO } from "../../../dtos/command.dto";
 import { SupportGroup } from "./_index";
 import { Bot } from "../../bot";
 
@@ -29,13 +29,13 @@ class Help extends Command {
 
     public async execute(data: CommandDTO, commandName?: string) {
         if (!commandName) {
-            return;
+            commandName = "help";
         }
 
-        this.card(data, commandName);
+        this.embed(data, commandName);
     }
 
-    private async card(data: CommandDTO, commandName: string) {
+    private async embed(data: CommandDTO, commandName: string) {
         const command = Bot.instance.commands.get(commandName);
         const user = data.type === "prefix" ? data.command.author : data.command.user;
 

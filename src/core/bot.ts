@@ -1,7 +1,7 @@
 import { config } from "dotenv";
-import { CommandGroup } from "./enitities/command-group.entity";
-import { ICommand } from "./interfaces/command.inteface";
-import { IEvent } from "./interfaces/event.interface";
+import { CommandGroup } from "../enitities/command-group.entity";
+import { ICommand } from "../interfaces/command.inteface";
+import { IEvent } from "../interfaces/event.interface";
 import { Client, Collection, GatewayIntentBits } from "discord.js";
 
 config();
@@ -45,11 +45,12 @@ export class Bot {
 
     public start() {
         console.log(" ⏳ Recording events...");
+
         this.events.forEach((event) => {
             this.client.on(event.name, event.execute);
         });
-        console.log(" ✅ Events successfully registered!");
         
+        console.log(" ✅ Events successfully registered!");
         this.client.login(process.env.TOKEN);
     }
 }
