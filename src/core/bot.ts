@@ -11,7 +11,9 @@ export class Bot {
     public client: Client;
     public groups = new Collection<string, CommandGroup>();
     public commands = new Collection<string, ICommand & { execute: (...args: any[]) => Promise<void> }>();
+    public aliases= new Collection<string, ICommand & { execute: (...args: any[]) => Promise<void> }>();
     public events = new Collection<string, IEvent & { execute: (...args: any[]) => Promise<void> }>();
+    public leaderboard: string | null = null;
     public prefix: string;
     public id: string;
 

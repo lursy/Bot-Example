@@ -13,6 +13,7 @@ class Ping extends Command {
             cooldown: 1000,
             description: "Calcular tempo de resposta do bot",
             name: "ping",
+            aliases: ["latency"],
             options: [
                 {
                     name: 'unidade',

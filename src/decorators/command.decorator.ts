@@ -7,6 +7,11 @@ export function RegisterCommand(group: CommandGroup) {
         const instance = new constructor(group.name);
         
         Bot.instance.commands.set(instance.name, instance);
+
+        for(const name of instance.aliases){
+            Bot.instance.aliases.set(name, instance);
+        }
+
         group.addCommand(instance);
     };
 }

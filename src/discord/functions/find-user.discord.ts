@@ -26,8 +26,8 @@ export async function findUser(mention: string, guild?: Guild): Promise<User | u
         let member = guild.members.cache.find(m =>
             m.displayName.toLowerCase().includes(mention.toLowerCase())
         );
-
-        if(!member){
+        
+        if (!member) {
             const members = await guild.members.fetch().catch(() => undefined);
 
             if(members){
@@ -35,11 +35,11 @@ export async function findUser(mention: string, guild?: Guild): Promise<User | u
                     m.displayName.toLowerCase().includes(mention.toLowerCase())
                 );
             }
-        }
 
-        if (member) {
-            return member.user;
+            if(!member) return;
         }
+        
+        return member.user;
     }
 
     return user;
