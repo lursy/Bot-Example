@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2024",                       // Or a version compatible with your Node.js environment
     "module": "nodenext",                     // Or "ESNext" if using ES Modules
-    "rootDir": "src/",                           // Where your TypeScript source files are located
+    "rootDir": "./",                           // Where your TypeScript source files are located
     "outDir": "./dist",                       // Where compiled JavaScript files will be output
     "strict": true,                           // Enable all strict type-checking options
     "moduleResolution": "nodenext",           // How modules are resolved
@@ -15,7 +15,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
   },
-  "include": [ "./src/**/*.ts", "main.ts"  ],
+//   "include": [ "./**/*.ts" ],
   "exclude": [
     "node_modules",
     "dist"

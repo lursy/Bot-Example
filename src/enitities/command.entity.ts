@@ -1,5 +1,5 @@
+import { ICommand, IConstructorCommand } from "../interfaces/command.inteface";
 import { ApplicationCommandOptionData } from "discord.js";
-import { ICommand } from "../interfaces/command.inteface";
 
 export class Command implements Omit<ICommand, "group"> {
     public name: string;
@@ -9,7 +9,7 @@ export class Command implements Omit<ICommand, "group"> {
     public options: ApplicationCommandOptionData[];
     public aliases: string[];
 
-    constructor(command: Omit<ICommand, "howToUse" | "group">){
+    constructor(command: IConstructorCommand) {
         this.name = command.name;
         this.options = command.options
         this.cooldown = command.cooldown;

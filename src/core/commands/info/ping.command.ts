@@ -1,8 +1,8 @@
-import { RegisterCommand } from "../../../decorators/command.decorator";
 import { ApplicationCommandOptionType, MessageFlags, MessagePayload, MessageReplyOptions } from "discord.js";
+import { RegisterCommand } from "../../../decorators/command.decorator";
 import { Command } from "../../../enitities/command.entity";
-import { InfoGroup } from "./_index";
 import { CommandDTO } from "../../../dtos/command.dto";
+import { InfoGroup } from "./_index";
 
 @RegisterCommand(InfoGroup)
 class Ping extends Command {

@@ -1,7 +1,9 @@
 // comands
-import "./core/commands/info/avatar.command";
-import "./core/commands/info/help.commands";
-import "./core/commands/info/ping.command";
+// import "./core/commands/info/avatar.command";
+// import "./core/commands/info/help.commands";
+// import "./core/commands/info/ping.command";
+import "./core/commands/games/race.command";
+import "./core/commands/info/balance.command";
 
 // events
 import "./core/events/interaction.event";

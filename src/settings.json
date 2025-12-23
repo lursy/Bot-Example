@@ -1,0 +1,192 @@
+{
+    "name": "Atena",
+    "money": "Magias",
+    "guild": "1218716080252518422",
+    "taxa": 5,
+    "images": {
+        "chest": {
+            "closed": {
+                "normal": "https://i.ibb.co/ZXMWxrT/closed-normal-chest.png",
+                "silver": "https://i.ibb.co/LSj2CMS/closed-silver-chest.png",
+                "gold": "https://i.ibb.co/K0KbV69/closed-gold-chest.png",
+                "diamond": "https://i.ibb.co/bJ8kJMN/closed-diamond-chest.png",
+                "mystic": "https://i.ibb.co/0MQkZxy/closed-mystic-chest.png"
+            },
+            "open": {
+                "normal": "https://i.ibb.co/QnMcHRk/open-normal-chest.png",
+                "silver": "https://i.ibb.co/KhzdKWv/open-silver-chest.png",
+                "gold": "https://i.ibb.co/h8Qpz4k/open-gold-chest.png",
+                "diamond": "https://i.ibb.co/z7LJYn8/open-diamond-chest.png",
+                "mystic": "https://i.ibb.co/BqTKSmv/open-mystic-chest.png"
+            }
+        },
+        "atena_chest": {
+            "closed": {
+                "normal": "https://i.ibb.co/mzmbvbk/normal.png",
+                "silver": "https://i.ibb.co/8rpDjtt/silver.png",
+                "gold": "https://i.ibb.co/KscJzMM/gold.png",
+                "diamond": "https://i.ibb.co/KsW7nXc/diamond.png",
+                "mystic": "https://i.ibb.co/fSVNYY5/mystic.png"
+            },
+            "open": {
+                "normal": "https://i.ibb.co/qx1mRck/normal.png",
+                "silver": "https://i.ibb.co/h1SxSjC/silver.png",
+                "gold": "https://i.ibb.co/mDF6ygy/gold.png",
+                "diamond": "https://i.ibb.co/ck0bhQb/diamond.png",
+                "mystic": "https://i.ibb.co/xgwxz2h/mystic.png"
+            }
+        },
+        "atena": {
+            "thumbsup": "https://i.ibb.co/260dQmR/atena-thumbsup.png",
+            "pensive": "https://i.ibb.co/CzsmzFR/atena-pensive.png",
+            "bitcoin": "https://i.ibb.co/x8BkJTT/atena-bitcoin.png",
+            "ticket": "https://i.ibb.co/GfSxk8bG/atena-ticket.png",
+            "money": "https://i.ibb.co/C5w0x3QG/atena-money.jpg",
+            "smile": "https://i.ibb.co/cC87GRb/atena-smile.png",
+            "angry": "https://i.ibb.co/VtPQWj3/atena-angry.png",
+            "gift": "https://i.ibb.co/NWsVjbX/atena-gift.png",
+            "sad": "https://i.ibb.co/HHwMMZW/atena-sad.png",
+            "cop": "https://i.ibb.co/NTpVcwt/atena-cop.png"
+        }
+    },
+    "stickers": {
+        "chest": {
+            "closed": {
+                "normal": {
+                    "name": "closed_normal_chest",
+                    "id": "1326618673955209236"
+                },
+                "silver": {
+                    "name": "closed_silver_chest",
+                    "id": "1326587230139056158"
+                },
+                "gold": {
+                    "name": "closed_gold_chest",
+                    "id": "1326587144948678686"
+                },
+                "diamond": {
+                    "name": "closed_diamond_chest",
+                    "id": "1326587122609819814"
+                },
+                "mystic": {
+                    "name": "closed_mystic_chest",
+                    "id": "1326587170827276420"
+                }
+            },
+            "open": {
+                "normal": {
+                    "name": "open_normal_chest",
+                    "id": "1326585559594045561"
+                },
+                "silver": {
+                    "name": "open_silver_chest",
+                    "id": "1326585595547619358"
+                },
+                "gold": {
+                    "name": "open_gold_chest",
+                    "id": "1326585497790971966"
+                },
+                "diamond": {
+                    "name": "open_diamond_chest",
+                    "id": "1326585468975845498"
+                },
+                "mystic": {
+                    "name": "open_mystic_chest",
+                    "id": "1326585523485278249"
+                }
+            }
+        }
+    },
+    "emojis": {
+        "closed_normal_chest": "<:closed_normal_chest:1326587191043948646>",
+        "open_normal_chest": "<:open_normal_chest:1326585559594045561>",
+        "atena_thumbsup": "<:atena_thumbsup:1316356785262821426>",
+        "atena_pensive": "<:atena_pensive:1316356707294777344>",
+        "loading": "<a:carregando_atena:1297267654989582440>",
+        "down": "<:seta_vermelha_atena:1301992694834528296>",
+        "atena_money": "<:atena_magia:1435638000171352115>",
+        "ethereum": "<:ethereum_atena:1301920438439641108>",
+        "litecoin": "<:litcoin_atena:1301920819601211494>",
+        "atena_gift": "<:atena_gift:1330102816039108618>",
+        "bitcoin": "<:bitcoin_atena:1301919960280596571>",
+        "atena_sad": "<:atena_sad:1316356732930359297>",
+        "atena_cop": "<:atena_cop:1334289459906088970>",
+        "boost": "<:booster_atena:1300521382190252082>",
+        "solana": "<:solana_atena:1301921105077993582>",
+        "monero": "<:monero_atena:1301920162777272341>",
+        "up": "<:seta_verde_atena:1301992714853679225>",
+        "money": "<:atena_magia:1435638000171352115>",
+        "equal": "<:igual_atena:1302030564806627410>",
+        "error": "<:erro_atena:1286832820932579369>",
+        "fire": "<a:fire_atena:1292235955297714258>",
+        "loss_money": "<:atena_loss:1340120327337807902>",
+        "atena_cash": "<:atena_cash:1340120352092717147>",
+        "participants": "👥",
+        "bag_of_money": "💰",
+        "money_mouth": "🤑",
+        "hand_shake": "🤝",
+        "dollar_fly": "💸",
+        "hour_glass": "⏳",
+        "explosion": "💥",
+        "warnning": "⚠️",
+        "confetes": "🎉",
+        "no_entry": "🚫",
+        "thumbsup": "👍🏻",
+        "tickets": "🎫",
+        "battle": "⚔️",
+        "rocket": "🚀",
+        "dollar": "💵",
+        "purple": "🟪",
+        "yellow": "🟨",
+        "green": "🟩",
+        "shiny": "✨",
+        "clock": "⏰",
+        "white": "⬜",
+        "check": "✅",
+        "punch": "👊",
+        "smile": "😆",
+        "bomb": "💣",
+        "blue": "🟦",
+        "exit": "✖️",
+        "lose": "🏳️",
+        "bolt": "⚡",
+        "gift": "🎁",
+        "gene": "🧬",
+        "star": "⭐",
+        "red": "🟥",
+        "eye": "👀",
+        "key": "🗝️",
+        "sun": "☀️",
+        "tag": "🏷️",
+        "animals": [
+            "💀", "🦂", "🦄", "🐉",
+            "🐶", "🐱", "🐭", "🐹",
+            "🐰", "🦁", "🐯", "🐨",
+            "🐻", "🐷", "🐸", "🐵",
+            "🐔", "🐧", "🐦", "🐤",
+            "🐣", "🐺", "🐗", "🐴",
+            "🐝", "🐛", "🐌", "🐞",
+            "🐢", "🐍", "🐙", "🐡",
+            "🐠", "🐟", "🐬", "🐳",
+            "🐋", "🐊", "🐆", "🐅",
+            "🐃", "🐂", "🐄", "🐪",
+            "🐫", "🐘", "🐐", "🐏",
+            "🐑", "🐎", "🐖", "🐀",
+            "🐁", "🐓", "🦃", "🕊️",
+            "🐕", "🐩", "🐇", "🐿️",
+            "🦌", "🦏", "🦍", "🦅",
+            "🦆", "🦉", "🦎", "🦕",
+            "🦖", "🦔", "🦓", "🦘",
+            "🦡", "🦢", "🦚", "🦜",
+            "🦥", "🦦", "🦨", "🦩",
+            "🦊", "🐼", "😈"
+        ]
+    },
+    "criptomoedas": [
+        "bitcoin",
+        "ethereum",
+        "litecoin",
+        "monero",
+        "solana"
+    ]
+}

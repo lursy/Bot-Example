@@ -9,3 +9,17 @@ export interface ICommand {
     description:    string;
     options:        ApplicationCommandOptionData[];
 }
+
+export interface IConstructorCommand{
+    name:           string;
+    aliases:        string[];
+    cooldown:       number;
+    description:    string;
+    options:        ApplicationCommandOptionData[];
+}
+
+export interface ICommandRequirements {
+    balance?: boolean;
+    player?: boolean;
+    daily?: boolean;
+}
